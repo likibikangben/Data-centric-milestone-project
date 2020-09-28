@@ -5,8 +5,8 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = 'Blog_manager'
-app.config["MONGO_URI"] = 'mongodb+srv://root:Diamond12@myfirstcluster.geudv.mongodb.net/Blog_manager?retryWrites=true&w=majority'
+app.config["MONGO_DBNAME"] = 'blog'
+app.config["MONGO_URI"] = 'mongodb+srv://root:Diamond12@myfirstcluster.geudv.mongodb.net/blog?retryWrites=true&w=majority'
 
 mongo = PyMongo(app)
 
