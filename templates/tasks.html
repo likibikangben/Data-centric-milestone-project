@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-        {% for task in tasks %}
-        {{task.category_name}}
-        {{task.movie_name}}
-        {{task.movie_award}}
-        {{task.movie_date}}
+        {% for blog in tasks %}
+        {{blog.title}}
+        {{blog.award}}
+        {{blog.genre}}
+        {{blog.release year}}
+        {{blog.writer}}
         {% endfor %}
 
  <ul class="collapsible" data-collapsible="accordion">
