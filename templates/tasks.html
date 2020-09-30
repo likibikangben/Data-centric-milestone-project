@@ -10,10 +10,14 @@
         {% endfor %}
 
  <ul class="collapsible" data-collapsible="accordion">
+
+    {% for blog in tasks %}
     <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>{{blog.title}} - {{blog.award}}</div>
+      <div class="collapsible-body"><span>Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.</span></div>
     </li>
+    {% endfor %}
+
     <li>
       <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
       <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
