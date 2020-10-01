@@ -15,6 +15,10 @@ mongo = PyMongo(app)
 def get_tasks():
     return render_template("tasks.html", blog=mongo.db.movies.find())
 
+@app.route('/add_tv')
+def add_tv():
+    return render_template('tv.html', blog=mongo.db.tv_shows.find())
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
