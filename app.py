@@ -7,12 +7,13 @@ app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = 'blog'
 app.config["MONGO_URI"] = 'mongodb+srv://root:Diamond12@myfirstcluster.geudv.mongodb.net/blog?retryWrites=true&w=majority'
+
 mongo = PyMongo(app)
 
 @app.route('/')
 @app.route('/get_tasks')
 def get_tasks():
-    return render_template("tasks.html", tasks=mongo.db.blog.find())
+    return render_template("tasks.html", tasks=mongo.db.movies.find())
 
 
 if __name__ == '__main__':
