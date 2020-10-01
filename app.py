@@ -10,9 +10,9 @@ app.config["MONGO_URI"] = 'mongodb+srv://root:Diamond12@myfirstcluster.geudv.mon
 mongo = PyMongo(app)
 
 @app.route('/')
-@app.route('/get_blog')
+@app.route('/get_tasks')
 def get_blog():
-    return render_template("tasks.html", blog=mongo.db.blog.find())
+    return render_template("tasks.html", tasks=mongo.db.blog.find())
 
 
 if __name__ == '__main__':
