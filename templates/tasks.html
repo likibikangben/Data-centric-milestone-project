@@ -1,7 +1,5 @@
 {% extends 'base.html' %} {% block content %}
 
-        
-
  <ul class="collapsible" data-collapsible="accordion">
 
     {% for movies in blog %}
@@ -9,29 +7,50 @@
       <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i><strong>{{movies.title}}</strong> - {{movies.award}}</div>
       <div class="collapsible-body"><span>Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan. Written and directed by Bong Joon Ho. Starring Kang-ho, Sun-kyun Lee and Yeo-jeong Jo <a href="https://www.imdb.com/title/tt6751668/?ref_=ev_nom" target="_blank">IMDb.</a></span></div>
     </li>
+    {% endfor %}
+ </ul>
+    
 
+ <ul class="collapsible" data-collapsible="accordion">
+     {% for movies in blog %}
     <li>
       <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i><strong>{{movies.title1}}</strong> - {{movies.award1}}</div>
       <div class="collapsible-body"><span>A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood's Golden Age in 1969 Los Angeles. Written and directed by Quentin Tarantino. Starring Leonardo DiCaprio, Brad Pitt and Margot Robbie <a href="https://www.imdb.com/title/tt7131622/?ref_=ev_nom" target="_blank">IMDb.</a>
       </span>
       </div>
     </li>
+    {% endfor %}
+ </ul>
+    
 
+ <ul class="collapsible" data-collapsible="accordion">
+     {% for movies in blog %}
     <li>
       <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i><strong>{{movies.title2}}</strong> - {{movies.award2}}</div>
       <div class="collapsible-body"><span>In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker. Written and directed by Todd Phillips. Starring Joaquin Phoenix, Robert De Niro and Zazie Beetz <a href="https://www.imdb.com/title/tt7286456/?ref_=ev_nom" target="_blank">IMDb.</a></span></div>
     </li>
+    {% endfor %}
+ </ul>
+    
 
+ <ul class="collapsible" data-collapsible="accordion">
+    {% for movies in blog %}
      <li>
       <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i><strong>{{movies.title3}}</strong> - {{movies.award3}}</div>
       <div class="collapsible-body"><span>Jo March reflects back and forth on her life, telling the beloved story of the March sisters - four young women, each determined to live life on her own terms. Written and directed by Greta Gerwig. Starring Saoirse Ronan, Emma Watson and Florence Pugh <a href="https://www.imdb.com/title/tt3281548/?ref_=ev_nom" target="_blank">IMDb.</a></span></div>
     </li>
+    {% endfor %}
+ </ul>
+    
 
+ <ul class="collapsible" data-collapsible="accordion">
+     {% for movies in blog %}
      <li>
       <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i><strong>{{movies.title4}}</strong> - {{movies.award4}}</div>
       <div class="collapsible-body"><span>American car designer Carroll Shelby and driver Ken Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order to defeat Ferrari at the 24 Hours of Le Mans in 1966. Written by Jez Butterworth and John-Henry Butterworth. Directed by James Mangold. Starring Matt Demon, Christian Bale and Jon Bernthal <a href="https://www.imdb.com/title/tt1950186/?ref_=ev_nom" target="_blank">IMDb.</a></span></div>
     </li>
+    {% endfor %}
   </ul>
 
-    {% endfor %}
+    
 {% endblock %}
